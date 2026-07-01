@@ -7,7 +7,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
-mongoose.connect("mongodb+srv://devgaur0809_db_user:l5cb1rOTEMaSo5Gk@cluster0.xagjvdl.mongodb.net/HospitalDB?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://devgaur0809_db_user:l5cb1rOTEMaSo5Gk@cluster0.xagjvdl.mongodb.net/")
     .then(() => console.log("MongoDB Connected Successfully"))
     .catch((err) => console.log("MongoDB Connection Error:", err));
 
